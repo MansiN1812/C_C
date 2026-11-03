@@ -1,0 +1,143 @@
+
+/* Background */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2, #a18cd1);
+    min-height: 100vh;
+    margin: 0;
+    padding: 30px 15px;
+    box-sizing: border-box;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    text-shadow: 2px 3px 5px #333;
+}
+
+/* Form Card */
+form {
+    background: rgba(255, 255, 255, 0.95);
+    max-width: 420px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+/* Form Hover */
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* Labels */
+form > label {
+    display: block;
+    color: #444;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+/* Input Fields */
+input:not([type="radio"]), select {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background: #f8f9ff;
+    transition: 0.3s;
+}
+
+/* Input Focus */
+input:focus, select:focus {
+    outline: none;
+    border-color: #764ba2;
+    background: white;
+    box-shadow: 0 0 10px rgba(118, 75, 162, 0.3);
+}
+
+/* Gender Section */
+.gender {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/* Gender Labels */
+.gender label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #f1edff;
+    padding: 10px 13px;
+    border-radius: 10px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gender label:hover {
+    background: #e0d5ff;
+    transform: scale(1.05);
+}
+
+/* Radio Buttons */
+input[type="radio"] {
+    accent-color: #764ba2;
+    cursor: pointer;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Hover */
+button:hover {
+    background: linear-gradient(135deg, #764ba2, #4b3f9e);
+    transform: translateY(-3px);
+    box-shadow: 0 7px 15px rgba(118, 75, 162, 0.4);
+}
+
+/* Button Click */
+button:active {
+    transform: scale(0.97);
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .gender {
+        gap: 8px;
+    }
+}
